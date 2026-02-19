@@ -1,0 +1,124 @@
+header img{
+    width: 500px;
+
+}
+
+header {
+    display:flex;
+    justify-content: space-around;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+header img {
+    width: 200px;
+    border-radius: 8px;
+}
+
+.menu {
+    list-style: none;          /* Quita puntitos */
+    padding: 0;
+    margin: 20px 0 0 0;
+    display: flex;             /* Horizontal */
+    gap: 20px;
+}
+
+.menu li a {
+    text-decoration: none;     /* Quita subrayado */
+    color: #000;
+    font-weight: 500;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+
+.contenido-principal {
+    padding: 40px;
+}
+
+/* FLEX EXPERIENCIA + HABILIDADES*/
+
+.flex-experiencia {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+.flex-experiencia > div {
+    flex: 1;
+}
+
+/*FLEX EDUCACIÓN + IDIOMAS */
+
+.flex-educacion {
+    display: flex;
+    gap: 60px;
+}
+
+.flex-educacion > div {
+    flex: 1;
+}
+
+/* ENCABEZADO DE TRABAJO */
+
+.encabezado-trabajo {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.encabezado-trabajo span {
+    white-space: nowrap; /* Evita que el año se rompa */
+    font-weight: 500;
+}
+
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .flex-experiencia,
+    .flex-educacion {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .encabezado-trabajo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .encabezado-trabajo span {
+        margin-top: 5px;
+    }
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-top: 40px;
+}
